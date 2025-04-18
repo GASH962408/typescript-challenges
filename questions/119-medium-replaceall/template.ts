@@ -10,6 +10,3 @@ export type ReplaceAll<
       : S extends `${infer Before}${From}${infer After}`
         ? `${Before}${To}${ReplaceAll<After,From,To>}`
         : S;
-
-        type example = 'foobarfoobar'
-        type newResult = ReplaceAll<example, "ob", "b"> 
