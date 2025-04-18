@@ -1,8 +1,8 @@
 export type Merge<First, Second> = {
-  [K in keyof First | keyof Second]:
+    [K in keyof First | keyof Second]:
     K extends keyof Second
-    ? Second[K] 
+    ? Second[K]
     : K extends keyof First
-      ? First[K] 
-      : never
+    ? First[K]
+    : never
 }
