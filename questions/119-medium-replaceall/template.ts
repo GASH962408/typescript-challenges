@@ -4,9 +4,9 @@ export type ReplaceAll<
   To extends string
 > =
   From extends ""
-    ? S
-    : From extends To
-      ? S
-      : S extends `${infer Before}${From}${infer After}`
-        ? `${Before}${To}${ReplaceAll<After,From,To>}`
-        : S;
+  ? S
+  : From extends To
+  ? S
+  : S extends `${infer Before}${From}${infer After}`
+  ? `${Before}${To}${ReplaceAll<After, From, To>}`
+  : S;
