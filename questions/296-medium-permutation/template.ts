@@ -1,1 +1,1 @@
-export type Permutation<T> = any
+export type Permutation<T> =
